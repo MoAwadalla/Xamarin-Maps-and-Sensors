@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="FormsApp.FirstPage">
+    
+    <StackLayout>
+
+            <Button HorizontalOptions="StartAndExpand" VerticalOptions="Start" Text="Click for Random Location" 
+                    Clicked="Random_Button_Clicked"></Button>
+            <Button HorizontalOptions="EndAndExpand" VerticalOptions="Start" Text= "Next Page"
+                    Clicked= "Next_Page_Button_Clicked"></Button>
+
+        <maps:Map x:Name="map" MapType="Hybrid" />
+
+    </StackLayout>
+    
+    
+</ContentPage>
